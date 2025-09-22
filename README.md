@@ -18,4 +18,4 @@ A React app for browsing and managing plant products with a shopping cart and fa
 ## Installation
 1. Clone the repo:
    ```bash
-   git clone https://github.com/NahidKameli/plants_shop.git
+   git clone https://github.com/NahidKameli/plants-shop.git
