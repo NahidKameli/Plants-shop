@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+.main {
+  @apply flex flex-col min-h-screen bg-cover bg-fixed bg-center bg-no-repeat;
+  background-image: url("/assets/green-leaf.jpg");
+  @media screen and (max-width: 768px) {
+    @apply bg-cover;
+  }
+}
+
+.navbar {
+  @apply flex justify-around items-center top-0 left-0 w-full backdrop-blur-md z-20 p-4 relative;
+  @media screen and (max-width: 768px) {
+    @apply justify-between;
+    padding: 3%;
+  }
+}
+
+.navbar input {
+  @apply text-white border-[1px] p-1 rounded-lg block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  @apply flex justify-center gap-6 text-white;
+  @media screen and (max-width: 768px) {
+    display: none; 
+  }
+}
+
+.menu li:hover {
+  @apply cursor-pointer hover:text-green-600;
+}
+
+.badge {
+  @apply flex;
+  @media screen and (max-width: 768px) {
+    @apply absolute top-6 right-6;
+  }
+}
+
+.before{
+    @apply grid grid-cols-4 max-w-6xl my-20 mx-auto pr-[8%] mr-[21%] gap-y-[2%] gap-x-[9%];
+    @media screen and (max-width:768px) {
+        @apply flex flex-col;
+        margin: 15% auto;
+    }
+}
+
+.after{
+    @apply grid grid-cols-4 max-w-6xl my-20 mx-auto pr-[8%] gap-x-[14%] gap-y-[2%];
+      @media screen and (max-width:768px) {
+        @apply flex flex-col my-14
+    }
+}
+
+.navbar.burger{
+    @apply block;
+     @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+.box {
+  @apply flex flex-col overflow-hidden w-65 bg-gray-100 items-center rounded-lg mb-[10%] leading-9 cursor-pointer;
+  @media screen and (max-width: 768px) {
+    @apply w-[80%] mb-[10%];
+    margin-inline: auto 7%;
+  }
+}
+
+.box img {
+  @apply p-[5%] rounded-2xl w-full;
+  @media screen and (max-width: 768px) {
+    @apply p-[2%] m-[2%] w-[90%];
+  }
+}
+
+.box:hover {
+  @apply opacity-95;
+}
+
+.add {
+  @apply transition-all duration-300 cursor-pointer mb-[15%] hover:rotate-90;
+  @media screen and (max-width: 768px) {
+    @apply mb-[8%];
+  }
+}
+
+.favorite {
+  @apply w-11 h-11 rounded-full bg-white flex justify-center items-center cursor-pointer absolute opacity-80;
+  @media screen and (max-width: 768px) {
+    @apply w-8 h-8 m-[2%];
+  }
+}
+
+.favorite:hover {
+  @apply transition-all duration-300 rotate-45;
+}
+
+.one{
+    @apply text-5xl text-white;
+    padding: 40px 40% 10px 42%;
+    @media screen and (max-width:768px) {
+        @apply p-0 m-auto text-4xl
+    }
+}
+
+.fav {
+  @apply flex justify-center items-center w-2/3 h-2/3 mb-[5%] bg-yellow-50 text-4xl font-bold text-green-600 m-auto mt-5 rounded-lg;
+  @media screen and (max-width: 768px) {
+    @apply w-[70%] h-auto text-2xl ;
+  }
+}
+
+.favorite-heart {
+  @apply w-9 h-9 rounded-full bg-white flex justify-center items-center cursor-pointer absolute opacity-80;
+  @media screen and (max-width: 768px) {
+    @apply w-7 h-7;
+  }
+}
+
+.favorite-box {
+  @apply flex flex-col items-center leading-9 cursor-pointer;
+  @media screen and (max-width: 768px) {
+    @apply w-[80%] m-auto;
+  }
+}
+
+.cart{
+    @apply grid grid-cols-4;
+    row-gap: 15px;
+    margin: 50px 20px;
+    @media screen and (max-width:768px) {
+        @apply flex flex-col
+    }
+}
+
+.plant-card {
+  @apply flex flex-col bg-yellow-50 absolute right-[2%] w-[21%] rounded-lg py-2.5 px-4 overflow-y-scroll;
+  max-height: 550px;
+  @media screen and (max-width: 768px) {
+    @apply hidden;
+  }
+}
+
+.plants {
+  @apply flex;
+  @media screen and (max-width: 768px) {
+    @apply flex-col;
+  }
+}
+
+.cards {
+  @apply mt-5 text-sm;
+  @media screen and (max-width: 768px) {
+    @apply text-base;
+  }
+}
+
+.cards img {
+  @apply w-[90%];
+  @media screen and (max-width: 768px) {
+    @apply w-full;
+  }
+}
+
+.shops {
+  @apply flex h-8 border-2 border-gray-300 rounded-lg w-[130%] m-auto mx-[6%];
+  @media screen and (max-width: 768px) {
+    @apply w-[100%];
+  }
+}
+
+.shops input {
+  @apply w-[100%] text-center;
+}
+
+.decrease {
+  @apply border-r-2 border-r-gray-300 px-1;
+}
+
+.increase {
+  @apply border-l-2 border-l-gray-300 px-1;
+}
+
+.order {
+  @apply m-2 bg-lime-200 rounded-lg cursor-pointer hover:bg-lime-300 p-1;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.footer {
+  @apply flex justify-around items-center w-full backdrop-blur-md text-white z-30 p-4 mt-auto;
+  @media screen and (max-width: 768px) {
+    @apply flex-col gap-2 text-sm;
+  }
+}
