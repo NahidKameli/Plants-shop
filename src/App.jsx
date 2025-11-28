@@ -3,7 +3,7 @@ import Background from "./Background";
 import Header from "./Header";
 import Plants from "./Plants";
 import Favorites from "./Favorites";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Footer from "./Footer";
 import { products } from "./products";
 
@@ -27,7 +27,6 @@ function App() {
   }
 
   return (
-    <Router>
       <Background>
         <Header like={like} shop={shop} searchHandler={searchHandler} />
         <Routes>
@@ -65,7 +64,6 @@ function App() {
         </Routes>
         <Footer />
       </Background>
-    </Router>
   );
 }
 

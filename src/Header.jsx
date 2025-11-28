@@ -11,7 +11,6 @@ function Header({ like, shop, search, searchHandler }) {
 
     const [open, setOpen] = useState(false);
     const isMobile = useMediaQuery("(max-width:768px)");
-
     const toggleDrawer = (isOpen) => () => {
         setOpen(isOpen);
     };
