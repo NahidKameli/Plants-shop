@@ -14,3 +14,18 @@ A React app for browsing and managing plant products with a shopping cart and fa
 - Tailwind CSS
 - Material-UI
 - React Router
+
+HEAD
+=======
+
+## Screenshots
+
+![Homepage](./screenshots/home.png)
+![Order](./screenshots/order.png)
+![Favorites](./screenshots/favorites.png)
+
+## Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/NahidKameli/plants_shop.git
+
